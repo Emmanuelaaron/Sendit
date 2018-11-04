@@ -49,3 +49,16 @@ a{
     color: rgb(33, 33, 214);
 }
 
+.prof a{
+    text-decoration: none;
+    color: #000;
+}
+
+button {
+    margin-top: 5px;
+    background: none;
+    color: #000;
+    border: none;
+}
+
+button:hover {}
