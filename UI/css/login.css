@@ -3,6 +3,7 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
     background: rgb(212, 203, 203, 0.4);
+    text-align: center;
 }
 
 body {
@@ -48,4 +49,84 @@ input[type="submit"]:hover{
 a{
     color: rgb(33, 33, 214);
 }
+
+.prof a{
+    text-decoration: none;
+    color: #000;
+}
+
+button {
+    margin-top: 5px;
+    background: none;
+    color: #000;
+    border: none;
+}
+
+button:hover, .prof a:hover {
+    color: rgb(223, 45, 45);
+}
+
+
+
+.body img {
+    width: 200px;
+    height: 200px;
+}
+
+.img_details p, .delivered_orders p {
+    font-size: 25px;
+}
+
+.body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background: rgb(212, 203, 203, 0.4);
+    margin-top: 50px;
+
+}
+
+.message {
+    margin-top: 20px;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.message input {
+    width: 30%;
+    height: 80px;
+    margin-top: 10px;
+    background: rgb(209, 199, 199);
+    border: none;
+    border-radius: 50px;
+}
+
+.delivered:hover .delivered_content {
+    display: block;
+}
+
+.delivered_content {
+    display: none;
+    position: absolute;
+    background-color: #5c15c7;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    color: aliceblue;
+}
+
+.delivered {
+    background: rgba(42, 5, 97, 0.4);
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 15px;
+    height: 30px;
+    border-radius: 50px;
+    color: aliceblue;
+
+}
+
 
