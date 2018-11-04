@@ -1,6 +1,6 @@
 .header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     background: rgb(212, 203, 203, 0.4);
 }
@@ -80,7 +80,23 @@ body{
 }
 
 input, button {
-    height: 30px;
+    text-decoration: none;
 }
 
+.header a{
+    text-decoration: none;
+    color: #000000;
+}
 
+button {
+    margin-top: 5px;
+    background: none;
+    border: none;
+}
+
+.header a:hover {
+    color: rgb(209, 43, 43);
+}
+.header button:hover {
+    color: rgb(209, 55, 55);
+}
