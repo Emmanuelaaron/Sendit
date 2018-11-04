@@ -61,4 +61,25 @@ button {
     border: none;
 }
 
-button:hover {}
+button:hover {
+    color: rgb(223, 45, 45);
+}
+
+.body img {
+    width: 200px;
+    height: 200px;
+}
+
+.img_details p, .delivered_orders p {
+    font-size: 25px;
+}
+
+.body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background: rgb(212, 203, 203, 0.4);
+    margin-top: 50px;
+
+}
