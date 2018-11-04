@@ -1,0 +1,86 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: rgb(212, 203, 203, 0.4);
+}
+
+.options {
+    background: rgb(212, 203, 203, 0.4);
+    margin-top: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body{
+    background-image: url(../images/gary-lopater-183558-unsplash.jpg);
+    background-size: cover;  
+}
+
+.dropdown_content1 {
+    display: none;
+    position: absolute;
+    background-color: #5c15c7;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown1:hover .dropdown_content1 {
+    display: block;
+}
+
+#my_pacels{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.dropdown1{
+    height: 50px;
+    background: #6c16ee;
+    width: 200px;
+    margin: 20px;
+    text-align: center;
+    padding-top: 20px;
+    color: aliceblue;
+    border-radius: 50px;
+}
+
+#pacels {
+    font-size: 60px;
+}
+
+.create_pacel:hover .create_pacel_content{
+    display: block;
+}
+
+.create_pacel_content {
+    display: none;
+    position: absolute;
+    background-color: #5c15c7;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.create_pacel{
+    height: 50px;
+    background: #6c16ee;
+    width: 200px;
+    margin: 20px;
+    text-align: center;
+    padding-top: 20px;
+    color: aliceblue;
+    border-radius: 50px;
+}
+
+input, button {
+    height: 30px;
+}
+
+
