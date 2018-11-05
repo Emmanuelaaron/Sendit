@@ -129,4 +129,73 @@ button:hover, .prof a:hover {
 
 }
 
+.search_user input {
+    width: 50%;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    background: rgb(189, 201, 211, 0.4);
+}
+
+.search_user button {
+    background: white;
+    height: 44px;
+    margin-top: 0%;
+    border-radius: 50px;
+    background: rgba(141, 152, 161, 0.4);
+    color: rgb(249, 249, 250);
+
+}
+
+.search_user {
+    display: flex;
+    align-items: center;
+    padding-left: 25%;
+    margin-top: 20px;
+}
+
+.options {
+    background: rgb(212, 203, 203, 0.4);
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dropdown_content1 {
+    display: none;
+    position: absolute;
+    background-color: #5c15c7;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown1:hover .dropdown_content1 {
+    display: block;
+}
+
+#my_pacels{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.dropdown1{
+    height: 50px;
+    background: #6c16ee;
+    width: 200px;
+    margin: 20px;
+    text-align: center;
+    padding-top: 20px;
+    color: aliceblue;
+    border-radius: 50px;
+}
+
+#pacels {
+    font-size: 60px;
+}
+
 
