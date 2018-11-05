@@ -129,4 +129,29 @@ button:hover, .prof a:hover {
 
 }
 
+.search_user input {
+    width: 50%;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    background: rgb(189, 201, 211, 0.4);
+}
+
+.search_user button {
+    background: white;
+    height: 44px;
+    margin-top: 0%;
+    border-radius: 50px;
+    background: rgba(141, 152, 161, 0.4);
+    color: rgb(249, 249, 250);
+
+}
+
+.search_user {
+    display: flex;
+    align-items: center;
+    padding-left: 25%;
+    margin-top: 20px;
+}
+
 
