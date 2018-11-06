@@ -52,9 +52,9 @@ a{
     color: rgb(33, 33, 214);
 }
 
-.prof a{
+.profile a{
     text-decoration: none;
-    color: #000;
+    color: rgb(228, 228, 122);
 }
 
 button {
@@ -62,6 +62,8 @@ button {
     background: none;
     color: #000;
     border: none;
+    color: #470f9c;
+
 }
 
 button:hover, .prof a:hover {
@@ -200,4 +202,46 @@ button:hover, .prof a:hover {
     font-size: 60px;
 }
 
+#blue {
+    color: blue;
+}
 
+#red {
+    color: red;
+}
+
+#yellow {
+    color: yellow;
+}
+
+#green {
+    color: green;
+}
+
+#courier {
+    color: rgb(71, 236, 71);
+}
+
+#comic {
+    color: rgb(90, 211, 126);
+}
+
+.trust {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.logo {
+    background: rgb(77, 51, 116, 0.3);
+    min-width: 13vw;
+    border-radius: 50px;
+}
+
+.login-form h1 {
+    margin-left: 35%;
+}
+
+.profile h1 {
+    font-family: 'Trebuchet MS';
+    color: rgb(228, 228, 122);
+
+}
