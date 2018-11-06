@@ -188,9 +188,9 @@ button:hover, .prof a:hover {
 }
 
 .dropdown1{
-    height: 50px;
+    height: 8vh;
     background: #6c16ee;
-    width: 200px;
+    width: 15vw;
     margin: 20px;
     text-align: center;
     padding-top: 20px;
@@ -199,7 +199,7 @@ button:hover, .prof a:hover {
 }
 
 #pacels {
-    font-size: 60px;
+    font-size: 200%;
 }
 
 #blue {
@@ -245,3 +245,18 @@ button:hover, .prof a:hover {
     color: rgb(228, 228, 122);
 
 }
+
+@media screen and (max-width: 783px) {
+    h1, #pacels {
+        font-size: 100%;
+    }
+}
+/* @media screen and (min-width: 458px){
+    h1 {
+        font-size: 16px;
+    }
+} */
+
+/* h1 {
+    font-size: 200%;
+} */
