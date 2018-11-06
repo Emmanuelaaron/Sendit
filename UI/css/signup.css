@@ -35,11 +35,14 @@ input {
 }
 
 .button button{
-    width: 102.6%;
+    width: 50%;
     height: 45px;
     margin-bottom: 5px;
-    
-}
+    margin-left: 25%;
+    background: rgb(91, 134, 172);
+    border: none;
+    color: aliceblue;
+    }
 
 .button button:hover{
     background: rgb(245, 9, 9);
@@ -50,4 +53,3 @@ a{
     color: rgb(33, 33, 214);
 }
 
-.
