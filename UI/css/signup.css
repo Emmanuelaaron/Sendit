@@ -3,6 +3,7 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
     background: rgb(212, 203, 203, 0.4);
+    align-items: center;
 }
 body {
     background-image: url(../images/gary-lopater-183558-unsplash.jpg);
@@ -77,4 +78,17 @@ a{
     color: rgb(90, 211, 126);
 }
 
+
+.logo {
+    background: rgb(77, 51, 116, 0.3);
+    min-width: 13vw;
+    border-radius: 50px;
+    text-align: center;
+}
+
+@media screen and (max-width: 603px){
+    h1 {
+        font-size: 5vw;
+    }
+}
 
