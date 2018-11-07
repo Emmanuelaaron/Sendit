@@ -148,4 +148,14 @@ button {
     color: rgb(228, 228, 122);
 }
 
+@media screen and (max-width: 603px){
+    h1 {
+        font-size: 5vw;
+    }
+
+
+}
+
+
+
 
