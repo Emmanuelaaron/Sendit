@@ -28,8 +28,14 @@ class Users:
                 users[self.name] = {"email":self.email, "password": self.password}
                 return f"{self.name}, congrats! You have sucessfully signed up"
     
-
-
-
-            
+    def login(self, name, password):
+        for dict_product in users:
+            if dict_product is not name:
+                return "Not registered user, please signup" 
+            else:
+                if dict_product is name and users[dict_product]["password"] is password:
+                    return "sucessfully logged in"
+                else:
+                    return "Incorrect password"
+   
 
