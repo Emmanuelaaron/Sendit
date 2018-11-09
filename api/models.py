@@ -9,7 +9,7 @@ users = {
 
 
 orders = {
-    1: {
+    2: {
         1:{
             "item": "blanket",
             "pickup_location": "Kansaga",
@@ -99,3 +99,8 @@ class Order:
             else:
                 return "Invalid Id user"
             
+    def delete_order(self, parcelId):
+        for order_dict in orders:
+            del orders[order_dict][parcelId]
+        return "sucessfully deleted"
+
