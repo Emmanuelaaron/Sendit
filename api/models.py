@@ -9,7 +9,7 @@ users = {
 
 
 orders = {
-    2: {
+    1: {
         1:{
             "item": "blanket",
             "pickup_location": "Kansaga",
@@ -40,9 +40,9 @@ class Users:
             if users[dict_product]["name"] is self.name:
                return "Username already in use! Please use another name"
             else:
-                users[len(users)]["name"] = self.name
-                users[len(users)]["email"] = self.email
-                users[len(users)]["password"] = self.password
+                users[len(users) + 1]["name"] = self.name
+                users[len(users) + 1]["email"] = self.email
+                users[len(users) + 1]["password"] = self.password
                 return "You have sucessfully signed up"
 
 
@@ -88,4 +88,14 @@ class Order:
                 if parcel_number is parcelId:
                     return orders[order_dict][parcel_number]
             
-
+    def get_all_orders_specific_user(self, userId):
+        for user in users:
+            if user is userId:
+                for order_dict in orders:
+                    if user is order_dict:
+                        return orders[order_dict]
+                    else:
+                        return "user has not yet made orders with us"
+            else:
+                return "Invalid Id user"
+            
