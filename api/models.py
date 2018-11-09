@@ -9,12 +9,12 @@ users = {
 
 
 orders = {
-    2: {
+    1: {
         1:{
             "item": "blanket",
             "pickup_location": "Kansaga",
             "destination": "muyenga",
-            "parcelId": 1 
+            # "parcelId": 1 
         }
     }
 }
@@ -73,11 +73,11 @@ class Admin(Users):
                     return "Incorrect password"
 
 class Order:
-    def __init__(self, item, pickup_location, destination, parcelId):
+    def __init__(self, item, pickup_location, destination):
         self.item = item
         self.pickup_location = pickup_location
         self.destination = destination
-        self.parcelId = parcelId
+        # self.parcelId = parcelId
 
     def get_all_orders(self):
         return orders
@@ -87,6 +87,8 @@ class Order:
             for parcel_number in orders[order_dict]:
                 if parcel_number is parcelId:
                     return orders[order_dict][parcel_number]
+                else:
+                    return "Invalid parcel id"
             
     def get_all_orders_specific_user(self, userId):
         for user in users:
@@ -104,3 +106,18 @@ class Order:
             del orders[order_dict][parcelId]
         return "sucessfully deleted"
 
+    def create_parcel_delivery_order(self, userId):
+        for user in users:
+            if user is userId:
+                for order in orders:
+                    orders[order][len(orders) + 1] = {}
+                    orders[order][len(orders) + 1]["item"] = self.item
+                    orders[order][len(orders) + 1]["pickup_location"] = self.pickup_location
+                    orders[order][len(orders) + 1]["destination"] = self.destination
+                    return "You've sucessfully created a parcel delivery order"
+            else:
+                return "user does not exist or check your user id please signup and make delivery orders"
+
+me = Order("bag", "muyenga", "kamuli")
+
+print (me.create_parcel_delivery_order(2))
