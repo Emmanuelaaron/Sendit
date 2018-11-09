@@ -46,7 +46,7 @@ class Users:
                 users[dict_product][len(users) + 1]["name"] = self.name
                 users[dict_product][len(users) + 1]["email"] = self.email
                 users[dict_product][len(users) + 1]["password"] = self.password
-                return "You have sucessfully signed up"
+                return "You have sucessfully signed up."
 
 
             
