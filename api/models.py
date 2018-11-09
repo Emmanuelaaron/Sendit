@@ -40,10 +40,13 @@ class Users:
             if users[dict_product]["name"] is self.name:
                return "Username already in use! Please use another name"
             else:
-                users[len(users) + 1]["name"] = self.name
-                users[len(users) + 1]["email"] = self.email
-                users[len(users) + 1]["password"] = self.password
-                return "You have sucessfully signed up"
+                users[dict_product] = {}
+                users[dict_product][len(users) + 1] = {}
+                users[dict_product][len(users) + 1]["name"] = {}
+                users[dict_product][len(users) + 1]["name"] = self.name
+                users[dict_product][len(users) + 1]["email"] = self.email
+                users[dict_product][len(users) + 1]["password"] = self.password
+                return "You have sucessfully signed up."
 
 
             
@@ -118,6 +121,3 @@ class Order:
             else:
                 return "user does not exist or check your user id please signup and make delivery orders"
 
-me = Order("bag", "muyenga", "kamuli")
-
-print (me.create_parcel_delivery_order(2))
