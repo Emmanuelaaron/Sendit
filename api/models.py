@@ -131,6 +131,14 @@ class Order:
             else:
                 return "user does not exist or check your user id please signup and make delivery orders"
 
-emma = Order("bag", "mulago", "jinja")
-
-print (emma.create_parcel_delivery_order(1))
+    def cancel_order(self, parcelId):
+        for order_dict in orders:
+            if order_dict is parcelId:
+                for key in orders[order_dict]:
+                    if orders[order_dict][key]["status"] is "Pending":
+                        orders[order_dict]["status"] = "Canceled"
+                        return "Successfully Cancelled"
+                    else:
+                        return "Sorry You can not cancel the order! It had been Delivered"
+            else:
+                return "Parcel id does not exist!"
