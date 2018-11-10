@@ -14,7 +14,7 @@ orders = {
             "item": "blanket",
             "pickup_location": "Kansaga",
             "destination": "muyenga",
-            # "parcelId": 1 
+            "status": "delivered" 
         }
     }
 }
@@ -122,7 +122,11 @@ class Order:
                     orders[order][len(orders) + 1]["item"] = self.item
                     orders[order][len(orders) + 1]["pickup_location"] = self.pickup_location
                     orders[order][len(orders) + 1]["destination"] = self.destination
-                    return "You've sucessfully created a parcel delivery order"
+                    orders[order][len(orders) + 1]["status"] = "pending"
+                    return orders
             else:
                 return "user does not exist or check your user id please signup and make delivery orders"
 
+emma = Order("bag", "mulago", "jinja")
+
+print (emma.create_parcel_delivery_order(1))

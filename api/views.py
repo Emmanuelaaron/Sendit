@@ -38,3 +38,16 @@ def get_all_orders_specific_user_(userId):
     message = myOrders.get_all_orders_specific_user(userId)
 
     return jsonify(message), 200
+
+# @app.route("/api/v1/parcels/<int:parcelId>/cancel", methods=['PUT'])
+# def delete_order_route(parcelId):
+#     data = request.get_json()
+#     item = data.get("item")
+#     pickup_location = data.get("pickup_location")
+#     destination = data.get("destination")
+#     myOrders = Order(item, pickup_location, destination)
+#     message = myOrders.delete_order(parcelId)
+
+#     return jsonify({
+#         "message": message
+#     })
