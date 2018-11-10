@@ -105,15 +105,19 @@ class Order:
             else:
                 return "Invalid Id user"
             
-    def delete_order(self, parcelId):
+    def update_status(self, parcelId):
         for order_dict in orders:
-            for key in orders[order_dict]:
-                if key is not parcelId:
-                    return "Invalid parcel Id, Please verify it and try again"
-                else:
-                    del orders[order_dict][parcelId]
-                    return "sucessfully deleted"
-
+            if order_dict is parcelId:
+                for key in orders[order_dict]:
+                    if orders[order_dict][key]["status"] is "Pending":
+                        orders[order_dict]["status"] = "Delivered"
+                        return "Successfully updated"
+                    else:
+                        orders[order_dict]["status"] = "Pending"
+                        return "Sucessfully updated"
+            else:
+                return "Parcel id does not exist"
+                
     def create_parcel_delivery_order(self, userId):
         for user in users:
             if user is userId:
