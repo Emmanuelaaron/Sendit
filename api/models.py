@@ -107,8 +107,12 @@ class Order:
             
     def delete_order(self, parcelId):
         for order_dict in orders:
-            del orders[order_dict][parcelId]
-        return "sucessfully deleted"
+            for key in orders[order_dict]:
+                if key is not parcelId:
+                    return "Invalid parcel Id, Please verify it and try again"
+                else:
+                    del orders[order_dict][parcelId]
+                    return "sucessfully deleted"
 
     def create_parcel_delivery_order(self, userId):
         for user in users:
